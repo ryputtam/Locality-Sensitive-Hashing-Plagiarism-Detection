@@ -11,8 +11,8 @@ The logic behind the construction of signature matrix can be found here: https:/
 
 
 3. Locality Sensitive Hashing - Identifying plagiarized documents by hashing the documents into buckets.
-The constructed signature matrix for the documents in sample folder is split into r rows and b bands. Each band is hashed into any one of the B buckets. Similarly, original document/s signature matrix is constructed and hashed into B buckets. Following this, candidate documents i.e., the documents that are hashed into same bucket as the original document for more than once are identified. Fasle positives and false negatives are determined using jaccard similarity and a threshold value.
+The constructed signature matrix for the documents in sample folder is split into r rows and b bands. Each band is hashed into any one of the B buckets. Similarly, original document/s signature matrix is constructed and hashed into B buckets. Following this, candidate documents i.e., the documents that are hashed into same bucket as the original document for more than once are identified. False positives and false negatives are determined using jaccard similarity and a threshold value.
 
-The results are optimized by splitting the signature matrix into different number od bands, rows and buckets for better results.
+The results are optimized by splitting the signature matrix into different number of bands, rows and buckets for better results.
 
 Finally, plagiarized documents are detected using LSH Algorithm in Python.
